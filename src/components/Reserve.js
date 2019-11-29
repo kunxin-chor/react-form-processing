@@ -82,8 +82,8 @@ export default class Reserve extends React.Component {
                     </div>
                    
                     <div>
-                        <input type='radio' name='smoking' onChange={this.updateSmoking} value='can-smoke' checked={this.state.smoking}/>Smoking
-                        <input type='radio' name='smoking' onChange={this.updateSmoking} value='cannot-smoke' checked={this.state.smoking}/>No Smoking
+                        <input type='radio' name='smoking' onChange={this.updateSmoking} value='can-smoke' checked={this.state.smoking==='smoking'}/>Smoking
+                        <input type='radio' name='smoking' onChange={this.updateSmoking} value='cannot-smoke' checked={this.state.smoking==='cannot-smoke'}/>No Smoking
                     </div>
                     <div>
                         <input type='checkbox' checked={this.state.extras['wet-tissues']}onChange={this.updateExtras} name='extras' value='wet-tissues'/>Wet Tissues
